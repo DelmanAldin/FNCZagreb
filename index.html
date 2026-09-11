@@ -41,7 +41,6 @@ body{
   color:var(--text);font-family:'Barlow',sans-serif;
   min-height:100vh;max-width:740px;margin:0 auto;font-size:15px;
 }
-
 /* ── HEADER ── */
 .header{
   background:linear-gradient(135deg,#2e1065 0%,#4c1d95 50%,#2e1065 100%);
@@ -53,49 +52,23 @@ body{
 .header-top{display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap;}
 .logo{font-family:'Bebas Neue',cursive;font-size:24px;letter-spacing:3px;color:#fff;line-height:1;}
 .logo em{color:#c4b5fd;font-style:normal;}
-.event-pill{
-  font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;
-  background:linear-gradient(135deg,var(--accent),#a855f7);
-  color:#fff;padding:4px 12px;border-radius:20px;
-  box-shadow:0 2px 8px rgba(124,58,237,0.4);
-}
+.event-pill{font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;background:linear-gradient(135deg,var(--accent),#a855f7);color:#fff;padding:4px 12px;border-radius:20px;box-shadow:0 2px 8px rgba(124,58,237,0.4);}
 .header-right{display:flex;align-items:center;gap:8px;margin-left:auto;}
-.live-badge{
-  display:none;
-  font-family:'Barlow Condensed',sans-serif;font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;
-  background:var(--red);color:#fff;padding:3px 8px;border-radius:20px;
-  animation:pulse 2s infinite;
-}
+.live-badge{display:none;font-family:'Barlow Condensed',sans-serif;font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;background:var(--red);color:#fff;padding:3px 8px;border-radius:20px;animation:pulse 2s infinite;}
 .live-badge.on{display:inline-block;}
 @keyframes pulse{0%,100%{opacity:1;box-shadow:0 0 0 0 rgba(220,38,38,0.4)}50%{opacity:.9;box-shadow:0 0 0 4px rgba(220,38,38,0)}}
-.mgr-btn{
-  background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);
-  color:rgba(255,255,255,0.5);border-radius:8px;
-  padding:5px 10px;cursor:pointer;transition:all 0.2s;
-  font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:700;letter-spacing:1px;
-  display:flex;align-items:center;gap:5px;
-}
+.mgr-btn{background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);color:rgba(255,255,255,0.5);border-radius:8px;padding:5px 10px;cursor:pointer;transition:all 0.2s;font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:700;letter-spacing:1px;display:flex;align-items:center;gap:5px;}
 .mgr-btn:hover{background:rgba(255,255,255,0.15);color:rgba(255,255,255,0.9);}
-.mgr-btn.active{background:rgba(245,196,0,0.15);border-color:var(--gold);color:var(--gold);}
+.mgr-btn.active{background:rgba(245,196,0,0.2);border-color:var(--gold);color:var(--gold);}
 .nav{display:flex;}
-.nav-btn{
-  flex:1;background:transparent;border:none;border-bottom:3px solid transparent;
-  color:rgba(255,255,255,0.4);
-  font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;
-  padding:9px 4px;cursor:pointer;transition:all 0.2s;
-}
+.nav-btn{flex:1;background:transparent;border:none;border-bottom:3px solid transparent;color:rgba(255,255,255,0.4);font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:9px 4px;cursor:pointer;transition:all 0.2s;}
 .nav-btn:hover{color:rgba(255,255,255,0.8);}
 .nav-btn.active{color:#fff;border-bottom-color:#c4b5fd;}
-
 /* ── CONTENT ── */
 .content{padding:20px 16px 40px;}
 .tab{display:none;}.tab.active{display:block;}
-.stitle{
-  font-family:'Bebas Neue',cursive;font-size:20px;letter-spacing:2px;
-  display:flex;align-items:center;gap:10px;margin-bottom:14px;color:var(--text);
-}
+.stitle{font-family:'Bebas Neue',cursive;font-size:20px;letter-spacing:2px;display:flex;align-items:center;gap:10px;margin-bottom:14px;color:var(--text);}
 .stitle::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,var(--border),transparent);}
-
 /* ── CARD ── */
 .card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);overflow:hidden;margin-bottom:10px;box-shadow:0 2px 10px var(--shadow);}
 .card-body{padding:14px;}
@@ -103,103 +76,58 @@ body{
 .badge{font-family:'Bebas Neue',cursive;font-size:12px;letter-spacing:0.5px;padding:2px 9px;border-radius:20px;}
 .badge-p{background:var(--accent);color:#fff;}
 .badge-g{background:var(--green);color:#fff;}
-
 /* ── SETUP FIGHT LIST ── */
 .fight-locked-row{display:flex;align-items:center;padding:11px 14px;gap:10px;border-bottom:1px solid var(--border);}
 .fight-locked-row:last-child{border-bottom:none;}
 .fnum{font-family:'Bebas Neue',cursive;font-size:20px;color:var(--accent);min-width:24px;text-align:center;line-height:1;}
 .fname{font-family:'Barlow Condensed',sans-serif;font-size:15px;font-weight:600;flex:1;color:var(--text);}
 .vsd{font-family:'Bebas Neue',cursive;font-size:13px;color:var(--muted);}
-
 /* ── FIGHTER PHOTO BUTTONS ── */
 .fighter-row{display:flex;gap:10px;margin-bottom:12px;align-items:stretch;}
-.vs-mid{display:flex;align-items:center;justify-content:center;flex-shrink:0;width:26px;
-  font-family:'Bebas Neue',cursive;font-size:15px;color:var(--muted);}
-
-.f-btn{
-  flex:1;background:var(--sf2);border:2px solid var(--border);
-  border-radius:var(--r);cursor:pointer;transition:all 0.18s;overflow:hidden;
-  display:flex;flex-direction:column;align-items:center;position:relative;
-  padding-bottom:8px;
-}
+.vs-mid{display:flex;align-items:center;justify-content:center;flex-shrink:0;width:26px;font-family:'Bebas Neue',cursive;font-size:15px;color:var(--muted);}
+.f-btn{flex:1;background:var(--sf2);border:2px solid var(--border);border-radius:var(--r);cursor:pointer;transition:all 0.18s;overflow:hidden;display:flex;flex-direction:column;align-items:center;position:relative;padding-bottom:8px;}
 .f-btn:hover{border-color:var(--accent);transform:translateY(-1px);box-shadow:0 4px 16px rgba(124,58,237,0.15);}
-.f-btn.sel{border-color:var(--accent);background:var(--acc-d);box-shadow:0 0 0 1px var(--accent),0 4px 16px rgba(124,58,237,0.2);}
-.f-btn.wsel{border-color:var(--gold);background:var(--gold-d);box-shadow:0 0 0 1px var(--gold),0 4px 16px rgba(217,119,6,0.2);}
-
+.f-btn.sel{border-color:var(--accent);background:var(--acc-d);box-shadow:0 0 0 1px var(--accent);}
+.f-btn.wsel{border-color:var(--gold);background:var(--gold-d);box-shadow:0 0 0 1px var(--gold);}
+.f-btn-ro{flex:1;background:var(--sf2);border:2px solid var(--border);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;align-items:center;padding-bottom:8px;}
+.f-btn-ro.sel{border-color:var(--accent);background:var(--acc-d);}
 .f-img{width:100%;height:110px;object-fit:contain;object-position:center bottom;display:block;}
-.f-label{
-  font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:700;
-  padding:4px 6px 0;text-align:center;line-height:1.2;color:var(--text2);
-}
-.f-btn.sel .f-label{color:var(--accent);}
+.f-label{font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:700;padding:4px 6px 0;text-align:center;line-height:1.2;color:var(--text2);}
+.f-btn.sel .f-label,.f-btn-ro.sel .f-label{color:var(--accent);}
 .f-btn.wsel .f-label{color:var(--gold);}
-
-.sel-check{
-  position:absolute;top:5px;right:5px;width:20px;height:20px;border-radius:50%;
-  background:var(--accent);color:#fff;font-size:11px;font-weight:900;
-  display:flex;align-items:center;justify-content:center;
-  opacity:0;transition:opacity 0.15s;
-}
+.sel-check{position:absolute;top:5px;right:5px;width:20px;height:20px;border-radius:50%;background:var(--accent);color:#fff;font-size:11px;font-weight:900;display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity 0.15s;}
 .f-btn.sel .sel-check{opacity:1;}
 .f-btn.wsel .sel-check{opacity:1;background:var(--gold);}
-
-/* read-only fighter display (tickets) */
-.f-btn-ro{
-  flex:1;background:var(--sf2);border:2px solid var(--border);
-  border-radius:var(--r);overflow:hidden;
-  display:flex;flex-direction:column;align-items:center;
-  padding-bottom:8px;
-}
-.f-btn-ro.sel{border-color:var(--accent);background:var(--acc-d);}
-.f-btn-ro .f-label{color:var(--text2);}
-.f-btn-ro.sel .f-label{color:var(--accent);}
-
 /* ── METHOD BUTTONS ── */
 .pick-label{font-family:'Barlow Condensed',sans-serif;font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-bottom:6px;}
 .method-btns{display:flex;gap:6px;flex-wrap:wrap;}
-.method-btn{
-  background:var(--sf2);border:2px solid var(--border);color:var(--text2);
-  border-radius:6px;padding:7px 12px;
-  font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:700;letter-spacing:0.5px;
-  cursor:pointer;transition:all 0.15s;
-}
+.method-btn{background:var(--sf2);border:2px solid var(--border);color:var(--text2);border-radius:6px;padding:7px 12px;font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:700;letter-spacing:0.5px;cursor:pointer;transition:all 0.15s;}
 .method-btn:hover{border-color:var(--muted);background:#fff;}
 .method-btn.s-ko{border-color:var(--red);background:var(--red-d);color:var(--red);}
 .method-btn.s-sub{border-color:var(--orange);background:rgba(234,88,12,0.10);color:var(--orange);}
 .method-btn.s-bod{border-color:var(--blue);background:rgba(37,99,235,0.10);color:var(--blue);}
 .method-btn.s-ost{border-color:var(--muted);background:rgba(139,133,193,0.10);color:var(--muted);}
-
-/* ── TICKETS VIEW ── */
+/* ── PTABS ── */
 .ptabs{display:flex;gap:5px;margin-bottom:16px;flex-wrap:wrap;}
-.ptab{
-  flex:1;min-width:60px;background:var(--surface);border:2px solid var(--border);color:var(--muted);
-  border-radius:var(--r);padding:9px 4px;
-  font-family:'Bebas Neue',cursive;font-size:15px;letter-spacing:1px;
-  cursor:pointer;transition:all 0.15s;text-align:center;line-height:1.2;
-  box-shadow:0 1px 4px var(--shadow);
-}
+.ptab{flex:1;min-width:60px;background:var(--surface);border:2px solid var(--border);color:var(--muted);border-radius:var(--r);padding:9px 4px;font-family:'Bebas Neue',cursive;font-size:15px;letter-spacing:1px;cursor:pointer;transition:all 0.15s;text-align:center;line-height:1.2;box-shadow:0 1px 4px var(--shadow);}
 .ptab:hover{border-color:var(--accent);color:var(--accent);}
 .ptab.active{border-color:var(--accent);color:var(--accent);background:var(--acc-d);}
-.ptab .psub{display:block;font-family:'Barlow',sans-serif;font-size:9px;font-weight:600;letter-spacing:0.5px;margin-top:2px;color:var(--green);}
-
-/* method pill in read-only ticket */
-.mpill{
-  font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:700;letter-spacing:1px;
-  padding:3px 9px;border-radius:20px;display:inline-block;margin-top:4px;
-}
+.ptab .psub{display:block;font-family:'Barlow',sans-serif;font-size:9px;font-weight:600;letter-spacing:0.5px;margin-top:2px;}
+.ptab .psub.ok{color:var(--green);}
+.ptab .psub.partial{color:var(--orange);}
+/* ── METHOD PILL ── */
+.mpill{font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:700;letter-spacing:1px;padding:3px 9px;border-radius:20px;display:inline-block;margin-top:4px;}
 .mp-ko{background:var(--red-d);color:var(--red);border:1px solid rgba(220,38,38,0.25);}
 .mp-sub{background:rgba(234,88,12,0.10);color:var(--orange);border:1px solid rgba(234,88,12,0.25);}
 .mp-bod{background:rgba(37,99,235,0.10);color:var(--blue);border:1px solid rgba(37,99,235,0.25);}
 .mp-ost{background:rgba(139,133,193,0.10);color:var(--muted);border:1px solid var(--border);}
-
 /* ── DOTS ── */
 .dot{width:7px;height:7px;border-radius:50%;flex-shrink:0;}
 .dot-done{background:var(--green);box-shadow:0 0 6px var(--green);}
 .dot-pend{background:var(--red);animation:blink 1.4s infinite;}
 .dot-idle{background:var(--border);}
 @keyframes blink{0%,100%{opacity:1}50%{opacity:0.3}}
-
-/* ── LIVE RESULT ── */
+/* ── LIVE ── */
 .result-box{display:flex;align-items:center;justify-content:space-between;padding:10px 14px 12px;gap:12px;}
 .winner-n{font-family:'Bebas Neue',cursive;font-size:26px;color:var(--gold);letter-spacing:1px;line-height:1;}
 .winner-s{font-family:'Barlow Condensed',sans-serif;font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:2px;}
@@ -208,19 +136,15 @@ body{
 .mt-sub{background:rgba(234,88,12,0.12);color:var(--orange);border:1px solid rgba(234,88,12,0.3);}
 .mt-bod{background:rgba(37,99,235,0.12);color:var(--blue);border:1px solid rgba(37,99,235,0.3);}
 .mt-ost{background:rgba(139,133,193,0.12);color:var(--muted);border:1px solid var(--border);}
-
-/* read-only pending fight */
 .fight-pending-ro{display:flex;align-items:center;padding:14px;gap:12px;}
 .fp-names{flex:1;}
 .fp-f1{font-family:'Barlow Condensed',sans-serif;font-size:15px;font-weight:700;color:var(--text);line-height:1.2;}
 .fp-vs{font-family:'Bebas Neue',cursive;font-size:11px;color:var(--muted);margin:2px 0;}
 .fp-f2{font-family:'Barlow Condensed',sans-serif;font-size:15px;font-weight:700;color:var(--text);line-height:1.2;}
 .pending-tag{font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:700;letter-spacing:1px;color:var(--muted);padding:4px 10px;border-radius:20px;border:1px solid var(--border);background:var(--sf2);}
-
-/* ── PROGRESS BAR ── */
+/* ── PROGRESS ── */
 .pbar{height:4px;background:var(--sf2);border-radius:2px;overflow:hidden;margin-bottom:16px;}
 .pbar-fill{height:100%;background:linear-gradient(90deg,var(--accent),#a855f7);border-radius:2px;transition:width 0.4s ease;}
-
 /* ── SCOREBOARD ── */
 .score-row{display:flex;align-items:center;padding:14px 16px;border-bottom:1px solid var(--border);gap:14px;transition:background 0.15s;}
 .score-row:hover{background:rgba(124,58,237,0.03);}
@@ -230,7 +154,6 @@ body{
 .score-nm{font-family:'Bebas Neue',cursive;font-size:24px;letter-spacing:1.5px;flex:1;color:var(--text);}
 .score-pts{font-family:'Bebas Neue',cursive;font-size:36px;color:var(--accent);line-height:1;}
 .score-sub{font-family:'Barlow Condensed',sans-serif;font-size:11px;color:var(--muted);text-align:right;margin-top:2px;}
-
 /* ── BREAKDOWN TABLE ── */
 .btable{width:100%;border-collapse:collapse;font-family:'Barlow Condensed',sans-serif;font-size:13px;}
 .btable th{background:var(--sf2);padding:7px 10px;text-align:left;font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);border-bottom:1px solid var(--border);}
@@ -240,30 +163,20 @@ body{
 .pts-pill{display:inline-block;font-family:'Bebas Neue',cursive;font-size:14px;padding:1px 8px;border-radius:20px;}
 .pts-ok{background:var(--grn-d);color:var(--green);border:1px solid rgba(5,150,105,0.3);}
 .pts-0{color:var(--muted);}
-
-/* ── SETUP BANNER ── */
-.setup-banner{background:linear-gradient(135deg,#fef3c7,#fffbeb);border:1px solid #fbbf24;border-radius:var(--r);padding:14px;margin-bottom:16px;}
-.setup-banner h3{font-family:'Bebas Neue',cursive;font-size:18px;letter-spacing:1px;color:#92400e;margin-bottom:6px;}
-.setup-banner p{font-family:'Barlow Condensed',sans-serif;font-size:13px;color:#78350f;line-height:1.5;margin-top:4px;}
-.setup-banner code{font-size:12px;background:rgba(0,0,0,0.07);padding:2px 5px;border-radius:3px;}
-.setup-banner ol{margin:8px 0 0 16px;}
-.setup-banner li{font-family:'Barlow Condensed',sans-serif;font-size:13px;color:#78350f;line-height:1.7;}
-
-/* ── MGR MODE BANNER ── */
-.mgr-banner{display:flex;align-items:center;gap:10px;background:linear-gradient(135deg,#fef9c3,#fefce8);border:1px solid var(--gold);border-radius:var(--r);padding:10px 14px;margin-bottom:14px;font-family:'Barlow Condensed',sans-serif;font-size:13px;color:var(--gold);font-weight:700;letter-spacing:0.5px;}
+/* ── BANNERS ── */
+.mgr-banner{display:flex;align-items:center;gap:10px;background:linear-gradient(135deg,#fef9c3,#fefce8);border:1px solid var(--gold);border-radius:var(--r);padding:10px 14px;margin-bottom:14px;font-family:'Barlow Condensed',sans-serif;font-size:13px;color:#92400e;font-weight:700;letter-spacing:0.5px;}
+.info-banner{background:var(--sf2);border:1px solid var(--border);border-radius:var(--r);padding:10px 14px;margin-bottom:14px;font-family:'Barlow Condensed',sans-serif;font-size:13px;color:var(--muted);}
 .sync-dot{width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 6px var(--green);display:inline-block;margin-right:4px;animation:blink 2s infinite;}
-
-/* ── PASSWORD MODAL ── */
+/* ── MODAL ── */
 .modal-overlay{position:fixed;inset:0;background:rgba(30,27,74,0.75);backdrop-filter:blur(4px);z-index:500;display:flex;align-items:center;justify-content:center;padding:20px;}
 .modal-overlay.hidden{display:none;}
 .modal-box{background:var(--surface);border-radius:16px;padding:28px 24px;width:100%;max-width:360px;box-shadow:0 20px 60px rgba(109,40,217,0.25);border:1px solid var(--border);}
 .modal-title{font-family:'Bebas Neue',cursive;font-size:24px;letter-spacing:2px;color:var(--text);margin-bottom:4px;}
-.modal-sub{font-family:'Barlow Condensed',sans-serif;font-size:14px;color:var(--muted);margin-bottom:18px;}
-.pwd-input{width:100%;background:var(--sf2);border:2px solid var(--border);border-radius:8px;color:var(--text);font-family:'Barlow Condensed',sans-serif;font-size:18px;font-weight:700;letter-spacing:4px;padding:12px 14px;outline:none;transition:border-color 0.2s;text-align:center;-webkit-text-security:disc;}
+.modal-sub{font-family:'Barlow Condensed',sans-serif;font-size:14px;color:var(--muted);margin-bottom:18px;line-height:1.5;}
+.pwd-input{width:100%;background:var(--sf2);border:2px solid var(--border);border-radius:8px;color:var(--text);font-family:'Barlow Condensed',sans-serif;font-size:22px;font-weight:700;letter-spacing:6px;padding:12px 14px;outline:none;transition:border-color 0.2s;text-align:center;}
 .pwd-input:focus{border-color:var(--accent);}
-.pwd-error{font-family:'Barlow Condensed',sans-serif;font-size:13px;color:var(--red);margin-top:6px;display:none;}
+.pwd-error{font-family:'Barlow Condensed',sans-serif;font-size:13px;color:var(--red);margin-top:8px;display:none;text-align:center;}
 .modal-btns{display:flex;gap:8px;margin-top:16px;}
-
 /* ── BUTTONS ── */
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;border:none;border-radius:6px;font-family:'Barlow Condensed',sans-serif;font-weight:700;letter-spacing:1px;text-transform:uppercase;cursor:pointer;transition:all 0.15s;white-space:nowrap;}
 .btn-sm{font-size:12px;padding:7px 14px;}
@@ -271,13 +184,12 @@ body{
 .btn-p{background:var(--accent);color:#fff;box-shadow:0 2px 8px rgba(124,58,237,0.3);}
 .btn-p:hover{filter:brightness(1.1);}
 .btn-g{background:var(--sf2);color:var(--text2);border:1px solid var(--border);}
-.btn-g:hover{color:var(--text);border-color:var(--muted);background:#fff;}
+.btn-g:hover{color:var(--text);border-color:var(--muted);}
 .btn-d{background:transparent;color:var(--red);border:1px solid var(--red);}
 .btn-d:hover{background:var(--red-d);}
 .btn-full{width:100%;}
 .edit-btn{background:transparent;border:1px solid var(--border);color:var(--muted);border-radius:4px;padding:4px 8px;font-family:'Barlow Condensed',sans-serif;font-size:11px;cursor:pointer;}
 .edit-btn:hover{border-color:var(--accent);color:var(--accent);}
-
 /* ── MISC ── */
 .info{font-family:'Barlow Condensed',sans-serif;font-size:14px;color:var(--muted);line-height:1.6;margin-bottom:14px;}
 .fight-matchup-text{font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:600;color:var(--text);flex:1;}
@@ -289,8 +201,7 @@ body{
   .ptab{font-size:13px;padding:8px 2px;}
   .method-btn{padding:6px 8px;font-size:12px;}
   .score-nm{font-size:20px;}.score-pts{font-size:30px;}
-  .f-img{height:85px;}
-  .f-label{font-size:12px;}
+  .f-img{height:85px;}.f-label{font-size:12px;}
 }
 </style>
 </head>
@@ -303,7 +214,7 @@ body{
       <span class="event-pill">FNC 33 · ZAGREB</span>
       <div class="header-right">
         <span class="live-badge" id="live-badge">⚡ LIVE</span>
-        <button class="mgr-btn" id="mgr-btn" onclick="openMgrModal()">🔐 <span id="mgr-label">Upravljanje</span></button>
+        <button class="mgr-btn" id="mgr-btn" onclick="openMgrModal()">🔐 <span id="mgr-label">Admin</span></button>
       </div>
     </div>
     <nav class="nav">
@@ -319,11 +230,11 @@ body{
 
   <div id="tab-setup" class="tab active">
     <div class="stitle">🥊 Borbe — FNC 33</div>
-    <p class="info">10 borbi. Prati rezultate na kartici <strong>Live</strong> — sve se osvježava u realnom vremenu. 🔴</p>
+    <p class="info">10 borbi. Admin popunjava listiće <strong>prije</strong> eventa, a tokom eventa unosi rezultate u <strong>Live</strong>. 🔴</p>
     <div id="fights-list"></div>
     <div class="dz mt20" id="mgr-dz" style="display:none">
       <div class="dz-t">⚠ Danger Zone</div>
-      <button class="btn btn-sm btn-d" onclick="resetResults()">Resetuj sve rezultate</button>
+      <button class="btn btn-sm btn-d" onclick="resetAll()">Resetuj sve (listići + rezultati)</button>
     </div>
   </div>
 
@@ -348,6 +259,7 @@ body{
 
 </div>
 
+<!-- PASSWORD MODAL -->
 <div class="modal-overlay hidden" id="pwd-modal">
   <div class="modal-box">
     <div id="modal-inner"></div>
@@ -359,7 +271,7 @@ body{
 
 <script>
 // ════════════════════════════════════════════════════════════════
-//  FIREBASE CONFIG — zalijepite vaš config ovdje
+//  FIREBASE CONFIG
 // ════════════════════════════════════════════════════════════════
 const FIREBASE_CONFIG = {
   apiKey:            "AIzaSyDXR9bZD9NqiF5234sDIuYVCjWM7mDbcyE",
@@ -371,21 +283,9 @@ const FIREBASE_CONFIG = {
   appId:             "1:978538777217:web:cd37904ec4e10fa06adb80"
 };
 // ════════════════════════════════════════════════════════════════
-//  TICKETS — popuniti kad stignu predikcije
-//  winnerIdx: 1 = prvi borac, 2 = drugi borac
-// ════════════════════════════════════════════════════════════════
-const TICKETS = {
-  Pumpa:  { /*f1:{winnerIdx:1,method:'KO/TKO'}, ...*/ },
-  Keni:   { },
-  Dino:   { },
-  Brano:  { },
-  Delman: { },
-};
-// ════════════════════════════════════════════════════════════════
 
 const MGR_PASSWORD = "100499";
 
-// Fighter images — fajlovi su u istom folderu kao index.html
 const FIGHTS = [
   {id:'f1',  f1:'Fran Luka Đurić',      f2:'Bartosz Wojcikiewicz', i1:'franluka.png',  i2:'bartosz.png'},
   {id:'f2',  f1:'Tiriel Luka Abramović', f2:'Valeri Atanasov',      i1:'tiriel.png',    i2:'atanasov.png'},
@@ -398,98 +298,114 @@ const FIGHTS = [
   {id:'f9',  f1:'Ivan Erslan',           f2:'Miran Fabjan',         i1:'erslan.png',    i2:'fabjan.png'},
   {id:'f10', f1:'Hatef Moeil',           f2:'Darko Stošić',         i1:'hatef.png',     i2:'stosic.png'},
 ];
-
 const PARTICIPANTS = ['Pumpa','Keni','Dino','Brano','Delman'];
 const METHODS = ['KO/TKO','Submission','Bodovi','Ostalo'];
-const MBTN = {'KO/TKO':'s-ko','Submission':'s-sub','Bodovi':'s-bod','Ostalo':'s-ost'};
-const MTAG = {'KO/TKO':'mt-ko','Submission':'mt-sub','Bodovi':'mt-bod','Ostalo':'mt-ost'};
+const MBTN  = {'KO/TKO':'s-ko','Submission':'s-sub','Bodovi':'s-bod','Ostalo':'s-ost'};
+const MTAG  = {'KO/TKO':'mt-ko','Submission':'mt-sub','Bodovi':'mt-bod','Ostalo':'mt-ost'};
 const MPILL = {'KO/TKO':'mp-ko','Submission':'mp-sub','Bodovi':'mp-bod','Ostalo':'mp-ost'};
 
-let results = {};
-let isManager = sessionStorage.getItem('fnc33_mgr') === MGR_PASSWORD;
-let activeP = PARTICIPANTS[0];
+// ── STATE ────────────────────────────────────────────────────
+let S = { tickets:{}, results:{} };
+// tickets structure: { Pumpa: { f1:{winnerIdx,method}, f2:... }, ... }
+PARTICIPANTS.forEach(p => { S.tickets[p] = {}; });
+
+let isAdmin    = sessionStorage.getItem('fnc33_admin') === MGR_PASSWORD;
+let activeP    = PARTICIPANTS[0];
 let currentTab = 'setup';
-let db = null;
-const FB_OK = !!(FIREBASE_CONFIG.databaseURL && FIREBASE_CONFIG.databaseURL.length > 5);
+let db         = null;
 
-if (FB_OK) {
-  try {
-    firebase.initializeApp(FIREBASE_CONFIG);
-    db = firebase.database();
-    db.ref('fnc33/results').on('value', snap => {
-      results = snap.val() || {};
-      renderTab(currentTab);
-    });
-    document.getElementById('live-badge').classList.add('on');
-  } catch(e) { console.error('Firebase error:', e); }
-} else {
-  try {
-    const s = localStorage.getItem('fnc33_results');
-    if (s) results = JSON.parse(s);
-  } catch(e) {}
-}
+// ── FIREBASE ─────────────────────────────────────────────────
+firebase.initializeApp(FIREBASE_CONFIG);
+db = firebase.database();
 
-function localSave() {
-  if (!FB_OK) try { localStorage.setItem('fnc33_results', JSON.stringify(results)); } catch(e) {}
+// Listen to everything under fnc33
+db.ref('fnc33').on('value', snap => {
+  const data = snap.val() || {};
+  // Merge tickets
+  PARTICIPANTS.forEach(p => {
+    S.tickets[p] = (data.tickets && data.tickets[p]) ? data.tickets[p] : {};
+  });
+  S.results = data.results || {};
+  renderTab(currentTab);
+});
+document.getElementById('live-badge').classList.add('on');
+
+// ── WRITE HELPERS ────────────────────────────────────────────
+function writePick(name, fightId, pick) {
+  db.ref(`fnc33/tickets/${name}/${fightId}`).set(pick);
 }
 function writeResult(fid, data) {
-  if (db) db.ref('fnc33/results/'+fid).set(data);
-  else { results[fid]=data; localSave(); renderLive(); renderResults(); }
+  db.ref(`fnc33/results/${fid}`).set(data);
 }
 function deleteResult(fid) {
-  if (db) db.ref('fnc33/results/'+fid).remove();
-  else { delete results[fid]; localSave(); renderLive(); }
+  db.ref(`fnc33/results/${fid}`).remove();
 }
 
-// ── MANAGEMENT ───────────────────────────────────────────────
-function updateMgrUI() {
-  const btn=document.getElementById('mgr-btn');
-  const lbl=document.getElementById('mgr-label');
-  const dz=document.getElementById('mgr-dz');
-  if (isManager) { btn.classList.add('active'); lbl.textContent='Aktivan ✓'; dz.style.display='block'; }
-  else           { btn.classList.remove('active'); lbl.textContent='Upravljanje'; dz.style.display='none'; }
+// ── ADMIN MODE ───────────────────────────────────────────────
+function updateAdminUI() {
+  const btn = document.getElementById('mgr-btn');
+  const lbl = document.getElementById('mgr-label');
+  const dz  = document.getElementById('mgr-dz');
+  if (isAdmin) {
+    btn.classList.add('active');
+    lbl.textContent = '🔓 Admin';
+    dz.style.display = 'block';
+  } else {
+    btn.classList.remove('active');
+    lbl.textContent = 'Admin';
+    dz.style.display = 'none';
+  }
 }
+
 function openMgrModal() {
-  const modal=document.getElementById('pwd-modal');
-  const inner=document.getElementById('modal-inner');
-  modal.classList.remove('hidden');
-  if (isManager) {
-    inner.innerHTML=`<div class="modal-title">🔓 Management Mod</div>
-      <div class="modal-sub">Trenutno si u management modu.</div>
+  const inner = document.getElementById('modal-inner');
+  document.getElementById('pwd-modal').classList.remove('hidden');
+  if (isAdmin) {
+    inner.innerHTML = `
+      <div class="modal-title">🔓 Admin mod</div>
+      <div class="modal-sub">Trenutno si u admin modu. Možeš ispuniti listiće i unositi rezultate.</div>
       <div class="modal-btns">
-        <button class="btn btn-d btn-full btn-md" onclick="logoutMgr()">Izaći iz management moda</button>
-        <button class="btn btn-g btn-sm" onclick="closeMgrModal()">Zatvori</button>
+        <button class="btn btn-d btn-full btn-md" onclick="logoutAdmin()">Izaći iz admin moda</button>
+        <button class="btn btn-g btn-sm" onclick="closeModal()">Zatvori</button>
       </div>`;
   } else {
-    inner.innerHTML=`<div class="modal-title">🔐 Management</div>
-      <div class="modal-sub">Unesite šifru za upravljanje rezultatima</div>
+    inner.innerHTML = `
+      <div class="modal-title">🔐 Admin</div>
+      <div class="modal-sub">Unesite admin pin za ispunjavanje listića i unos rezultata</div>
       <input type="password" class="pwd-input" id="pwd-input" placeholder="••••••" maxlength="10"
-        onkeydown="if(event.key==='Enter')checkPwd()">
-      <div class="pwd-error" id="pwd-error">❌ Pogrešna šifra</div>
+        onkeydown="if(event.key==='Enter')checkPin()">
+      <div class="pwd-error" id="pwd-error">❌ Pogrešan pin</div>
       <div class="modal-btns" style="margin-top:16px">
-        <button class="btn btn-p btn-full btn-md" onclick="checkPwd()">Potvrdi</button>
-        <button class="btn btn-g btn-sm" onclick="closeMgrModal()">Odustani</button>
+        <button class="btn btn-p btn-full btn-md" onclick="checkPin()">Potvrdi</button>
+        <button class="btn btn-g btn-sm" onclick="closeModal()">Odustani</button>
       </div>`;
-    setTimeout(()=>{const el=document.getElementById('pwd-input');if(el)el.focus();},50);
+    setTimeout(() => { const el = document.getElementById('pwd-input'); if(el) el.focus(); }, 50);
   }
 }
-function checkPwd() {
-  const val=document.getElementById('pwd-input').value;
-  if (val===MGR_PASSWORD) {
-    isManager=true; sessionStorage.setItem('fnc33_mgr',MGR_PASSWORD);
-    closeMgrModal(); updateMgrUI(); renderTab(currentTab);
+
+function checkPin() {
+  const val = (document.getElementById('pwd-input')||{}).value || '';
+  if (val === MGR_PASSWORD) {
+    isAdmin = true;
+    sessionStorage.setItem('fnc33_admin', MGR_PASSWORD);
+    closeModal(); updateAdminUI(); renderTab(currentTab);
   } else {
-    document.getElementById('pwd-error').style.display='block';
-    document.getElementById('pwd-input').style.borderColor='var(--red)';
-    document.getElementById('pwd-input').value='';
-    setTimeout(()=>{const e=document.getElementById('pwd-error');if(e)e.style.display='none';},2000);
+    const e = document.getElementById('pwd-error');
+    if(e) { e.style.display='block'; setTimeout(()=>e.style.display='none', 2000); }
+    const i = document.getElementById('pwd-input');
+    if(i) i.value='';
   }
 }
-function logoutMgr() {
-  isManager=false; sessionStorage.removeItem('fnc33_mgr');
-  closeMgrModal(); updateMgrUI(); renderTab(currentTab);
+
+function logoutAdmin() {
+  isAdmin = false;
+  sessionStorage.removeItem('fnc33_admin');
+  closeModal(); updateAdminUI(); renderTab(currentTab);
 }
-function closeMgrModal() { document.getElementById('pwd-modal').classList.add('hidden'); }
+
+function closeModal() {
+  document.getElementById('pwd-modal').classList.add('hidden');
+}
 
 // ── TABS ─────────────────────────────────────────────────────
 function goTab(tab) {
@@ -508,106 +424,149 @@ function renderTab(tab) {
 
 // ── SETUP ────────────────────────────────────────────────────
 function renderSetup() {
-  let html = !FB_OK ? `<div class="setup-banner">
-    <h3>⚙️ Firebase nije konfigurisan — offline mod</h3>
-    <p>Za live sync između uređaja:</p>
-    <ol>
-      <li>Idite na <strong>console.firebase.google.com</strong> → kreirajte projekat</li>
-      <li><strong>Build → Realtime Database → Create database</strong> (test mode)</li>
-      <li><strong>Project Settings → Your apps → &lt;/&gt;</strong> → registrirajte web app → kopirajte config</li>
-      <li>Zalijepite config u <code>index.html</code> → push na GitHub</li>
-    </ol>
-  </div>` : '';
-
-  html += '<div class="card">' + FIGHTS.map((f,i) => `
-    <div class="fight-locked-row">
-      <span class="fnum">${i+1}</span>
-      <span class="fname">${esc(f.f1)}</span>
-      <span class="vsd">VS</span>
-      <span class="fname" style="text-align:right">${esc(f.f2)}</span>
-      <span class="dot dot-done"></span>
-    </div>`).join('') + '</div>';
-
+  let html = '<div class="card">' +
+    FIGHTS.map((f,i) => `
+      <div class="fight-locked-row">
+        <span class="fnum">${i+1}</span>
+        <span class="fname">${esc(f.f1)}</span>
+        <span class="vsd">VS</span>
+        <span class="fname" style="text-align:right">${esc(f.f2)}</span>
+        <span class="dot dot-done"></span>
+      </div>`).join('') + '</div>';
   document.getElementById('fights-list').innerHTML = html;
 }
 
 // ── TICKETS ──────────────────────────────────────────────────
 function setActiveP(p) { activeP=p; renderTickets(); }
 
+function pickWinner(name, fightId, wIdx) {
+  if (!isAdmin) return;
+  const existing = S.tickets[name][fightId] || {};
+  writePick(name, fightId, {...existing, winnerIdx:wIdx});
+}
+function pickMethod(name, fightId, mIdx) {
+  if (!isAdmin) return;
+  const existing = S.tickets[name][fightId] || {};
+  writePick(name, fightId, {...existing, method:METHODS[mIdx]});
+}
+
 function renderTickets() {
+  // Tab bar
   document.getElementById('ptabs-row').innerHTML = PARTICIPANTS.map(p => {
-    const t=TICKETS[p]||{};
-    const filled=FIGHTS.every(f=>t[f.id]&&t[f.id].winnerIdx);
-    return `<button class="ptab ${p===activeP?'active':''}" onclick="setActiveP('${p}')">
-      ${p}${filled?'<span class="psub">✓ Popunjen</span>':''}
-    </button>`;
+    const t = S.tickets[p]||{};
+    const filled = FIGHTS.filter(f => t[f.id]&&t[f.id].winnerIdx&&t[f.id].method).length;
+    const total  = FIGHTS.length;
+    let subHtml = '';
+    if (filled === total)    subHtml = `<span class="psub ok">✓ Popunjen</span>`;
+    else if (filled > 0)     subHtml = `<span class="psub partial">${filled}/${total}</span>`;
+    return `<button class="ptab ${p===activeP?'active':''}" onclick="setActiveP('${p}')">${p}${subHtml}</button>`;
   }).join('');
 
-  const t=TICKETS[activeP]||{};
-  let html='';
+  const t = S.tickets[activeP]||{};
+  let html = '';
+
+  // Banner
+  if (isAdmin) {
+    html += `<div class="mgr-banner">✏️ Admin mod — ispunjavas listić za <strong>${activeP}</strong>. Klikni borca i način pobjede.</div>`;
+  } else {
+    html += `<div class="info-banner">👁 Read-only prikaz — samo admin može mijenjati listiće.</div>`;
+  }
 
   FIGHTS.forEach((f,i) => {
-    const pick=t[f.id]||{};
-    const wIdx=pick.winnerIdx||0;
-    const method=pick.method||'';
-    html+=`<div class="card" style="margin-bottom:10px">
-      <div class="card-head">
-        <span class="badge badge-p">#${i+1}</span>
-        <span class="fight-matchup-text">${esc(f.f1)} <em>vs</em> ${esc(f.f2)}</span>
-        ${wIdx?'<span class="dot dot-done"></span>':'<span class="dot dot-idle"></span>'}
-      </div>
-      <div class="card-body" style="pointer-events:none">
-        <div class="fighter-row">
-          <div class="f-btn-ro ${wIdx===1?'sel':''}">
-            <img class="f-img" src="${f.i1}" alt="${esc(f.f1)}">
-            <div class="f-label">${esc(f.f1)}</div>
-            ${wIdx===1&&method?`<div style="text-align:center;padding:0 4px"><span class="mpill ${MPILL[method]||'mp-ost'}">${method}</span></div>`:''}
+    const pick  = t[f.id]||{};
+    const wIdx  = pick.winnerIdx||0;
+    const method = pick.method||'';
+
+    if (isAdmin) {
+      // Editable
+      html += `<div class="card" style="margin-bottom:10px">
+        <div class="card-head">
+          <span class="badge badge-p">#${i+1}</span>
+          <span class="fight-matchup-text">${esc(f.f1)} <em>vs</em> ${esc(f.f2)}</span>
+          ${wIdx&&method?'<span class="dot dot-done"></span>':'<span class="dot dot-idle"></span>'}
+        </div>
+        <div class="card-body">
+          <div class="pick-label">Pobjednik</div>
+          <div class="fighter-row">
+            <button class="f-btn ${wIdx===1?'sel':''}" onclick="pickWinner('${activeP}','${f.id}',1)">
+              <div class="sel-check">✓</div>
+              <img class="f-img" src="${f.i1}" alt="${esc(f.f1)}">
+              <div class="f-label">${esc(f.f1)}</div>
+            </button>
+            <div class="vs-mid">VS</div>
+            <button class="f-btn ${wIdx===2?'sel':''}" onclick="pickWinner('${activeP}','${f.id}',2)">
+              <div class="sel-check">✓</div>
+              <img class="f-img" src="${f.i2}" alt="${esc(f.f2)}">
+              <div class="f-label">${esc(f.f2)}</div>
+            </button>
           </div>
-          <div class="vs-mid">VS</div>
-          <div class="f-btn-ro ${wIdx===2?'sel':''}">
-            <img class="f-img" src="${f.i2}" alt="${esc(f.f2)}">
-            <div class="f-label">${esc(f.f2)}</div>
-            ${wIdx===2&&method?`<div style="text-align:center;padding:0 4px"><span class="mpill ${MPILL[method]||'mp-ost'}">${method}</span></div>`:''}
+          <div class="pick-label">Način pobjede</div>
+          <div class="method-btns">
+            ${METHODS.map((m,mi)=>`<button class="method-btn ${method===m?MBTN[m]:''}" onclick="pickMethod('${activeP}','${f.id}',${mi})">${m}</button>`).join('')}
           </div>
         </div>
-        ${!wIdx?'<div style="font-family:Barlow Condensed;font-size:13px;color:var(--muted);font-style:italic;text-align:center;padding:4px 0">nije popunjeno</div>':''}
-      </div>
-    </div>`;
+      </div>`;
+    } else {
+      // Read-only
+      html += `<div class="card" style="margin-bottom:10px">
+        <div class="card-head">
+          <span class="badge badge-p">#${i+1}</span>
+          <span class="fight-matchup-text">${esc(f.f1)} <em>vs</em> ${esc(f.f2)}</span>
+          ${wIdx?'<span class="dot dot-done"></span>':'<span class="dot dot-idle"></span>'}
+        </div>
+        <div class="card-body">
+          <div class="fighter-row">
+            <div class="f-btn-ro ${wIdx===1?'sel':''}">
+              <img class="f-img" src="${f.i1}" alt="${esc(f.f1)}">
+              <div class="f-label">${esc(f.f1)}</div>
+              ${wIdx===1&&method?`<div style="text-align:center;padding:0 4px 4px"><span class="mpill ${MPILL[method]||'mp-ost'}">${method}</span></div>`:''}
+            </div>
+            <div class="vs-mid">VS</div>
+            <div class="f-btn-ro ${wIdx===2?'sel':''}">
+              <img class="f-img" src="${f.i2}" alt="${esc(f.f2)}">
+              <div class="f-label">${esc(f.f2)}</div>
+              ${wIdx===2&&method?`<div style="text-align:center;padding:0 4px 4px"><span class="mpill ${MPILL[method]||'mp-ost'}">${method}</span></div>`:''}
+            </div>
+          </div>
+          ${!wIdx?'<div style="text-align:center;font-family:Barlow Condensed;font-size:13px;color:var(--muted);font-style:italic;padding:4px 0">nije popunjeno</div>':''}
+        </div>
+      </div>`;
+    }
   });
 
   document.getElementById('ticket-view').innerHTML = html;
 }
 
 // ── LIVE ─────────────────────────────────────────────────────
-function setResultWinner(fid,wIdx) {
-  if(!isManager) return;
-  writeResult(fid,{...(results[fid]||{}),winnerIdx:wIdx});
+function setResultWinner(fid, wIdx) {
+  if (!isAdmin) return;
+  writeResult(fid, {...(S.results[fid]||{}), winnerIdx:wIdx});
 }
-function setResultMethod(fid,mIdx) {
-  if(!isManager) return;
-  writeResult(fid,{...(results[fid]||{}),method:METHODS[mIdx]});
+function setResultMethod(fid, mIdx) {
+  if (!isAdmin) return;
+  writeResult(fid, {...(S.results[fid]||{}), method:METHODS[mIdx]});
 }
-function clearResult(fid) { if(isManager) deleteResult(fid); }
+function clearResult(fid) { if(isAdmin) deleteResult(fid); }
 
 function renderLive() {
-  const done=FIGHTS.filter(f=>{const r=results[f.id];return r&&r.winnerIdx&&r.method;}).length;
+  const done = FIGHTS.filter(f=>{const r=S.results[f.id];return r&&r.winnerIdx&&r.method;}).length;
   document.getElementById('pbar-fill').style.width=(done/FIGHTS.length*100)+'%';
-  let html='';
+  let html = '';
 
-  if (isManager) {
-    html+=`<div class="mgr-banner"><span style="font-size:18px">🔓</span> Management mod aktivan — možeš unositi rezultate</div>`;
+  if (isAdmin) {
+    html += `<div class="mgr-banner">🔓 Admin mod — klikni pobjednika i način pobjede za svaku borbu. Rezultati se odmah vide svima.</div>`;
   } else {
-    html+=`<p class="info">${done} / ${FIGHTS.length} borbi završeno${FB_OK?' · <span class="sync-dot"></span>Live sync':' · Offline'}</p>`;
+    html += `<p class="info">${done} / ${FIGHTS.length} borbi završeno · <span class="sync-dot"></span>Live sync aktivan</p>`;
   }
 
   FIGHTS.forEach((f,i) => {
-    const r=results[f.id]||{};
-    const isDone=r.winnerIdx&&r.method;
+    const r = S.results[f.id]||{};
+    const isDone = r.winnerIdx&&r.method;
 
     if (isDone) {
-      const winner=r.winnerIdx===1?f.f1:f.f2;
-      const mc=MTAG[r.method]||'mt-ost';
-      html+=`<div class="card" style="border-color:var(--green);margin-bottom:10px">
+      const winner = r.winnerIdx===1?f.f1:f.f2;
+      const mc = MTAG[r.method]||'mt-ost';
+      html += `<div class="card" style="border-color:var(--green);margin-bottom:10px">
         <div class="card-head">
           <span class="dot dot-done"></span>
           <span class="badge badge-g">#${i+1}</span>
@@ -617,14 +576,13 @@ function renderLive() {
           <div><div class="winner-s">Pobjednik</div><div class="winner-n">${esc(winner)}</div></div>
           <div style="text-align:right">
             <div style="margin-bottom:6px"><span class="mtag ${mc}">${r.method}</span></div>
-            ${isManager?`<button class="edit-btn" onclick="clearResult('${f.id}')">Izmijeni</button>`:''}
+            ${isAdmin?`<button class="edit-btn" onclick="clearResult('${f.id}')">Izmijeni</button>`:''}
           </div>
         </div>
       </div>`;
-    } else if (isManager) {
-      // Manager: photo pick buttons
+    } else if (isAdmin) {
       const wIdx=r.winnerIdx||0, method=r.method||'';
-      html+=`<div class="card" style="${wIdx||method?'border-color:var(--accent)':''};margin-bottom:10px">
+      html += `<div class="card" style="${wIdx||method?'border-color:var(--accent)':''};margin-bottom:10px">
         <div class="card-head">
           <span class="dot ${wIdx||method?'dot-pend':'dot-idle'}"></span>
           <span class="badge badge-p">#${i+1}</span>
@@ -652,8 +610,7 @@ function renderLive() {
         </div>
       </div>`;
     } else {
-      // Read-only pending
-      html+=`<div class="card" style="margin-bottom:10px">
+      html += `<div class="card" style="margin-bottom:10px">
         <div class="card-head">
           <span class="dot dot-idle"></span>
           <span class="badge badge-p">#${i+1}</span>
@@ -678,13 +635,13 @@ function renderLive() {
 function calcScores() {
   const scores={};
   PARTICIPANTS.forEach(p=>{scores[p]={total:0,wPts:0,mPts:0,rows:[]};});
-  FIGHTS.forEach((f,i) => {
-    const r=results[f.id]||{};
+  FIGHTS.forEach((f,i)=>{
+    const r=S.results[f.id]||{};
     const isDone=r.winnerIdx&&r.method;
-    PARTICIPANTS.forEach(p => {
-      const pick=(TICKETS[p]&&TICKETS[p][f.id])||{};
+    PARTICIPANTS.forEach(p=>{
+      const pick=(S.tickets[p]&&S.tickets[p][f.id])||{};
       let wPt=0,mPt=0,status='pending';
-      if(isDone&&pick.winnerIdx) {
+      if(isDone&&pick.winnerIdx){
         if(pick.winnerIdx===r.winnerIdx){wPt=1;status='w-only';if(pick.method===r.method){mPt=1;status='both';}}
         else{status='wrong';}
       } else if(!pick.winnerIdx){status='no-pick';}
@@ -717,7 +674,7 @@ function renderResults() {
   let bd='';
   PARTICIPANTS.forEach(p=>{
     const d=scores[p];
-    const hasT=FIGHTS.some(f=>TICKETS[p]&&TICKETS[p][f.id]&&TICKETS[p][f.id].winnerIdx);
+    const hasT=FIGHTS.some(f=>S.tickets[p]&&S.tickets[p][f.id]&&S.tickets[p][f.id].winnerIdx);
     bd+=`<div class="card" style="margin-bottom:16px">
       <div class="card-head" style="justify-content:space-between">
         <div style="display:flex;align-items:center;gap:8px">
@@ -750,28 +707,21 @@ function renderResults() {
 }
 
 // ── RESET ────────────────────────────────────────────────────
-function resetResults() {
-  if(!isManager||!confirm('Obrisati SVE rezultate?')) return;
-  if(db) db.ref('fnc33/results').remove();
-  else{results={};localSave();renderTab(currentTab);}
+function resetAll() {
+  if(!isAdmin||!confirm('Obrisati SVE listiće i rezultate? Ovo se ne može poništiti!')) return;
+  db.ref('fnc33').remove();
 }
 
 // ── UTIL ─────────────────────────────────────────────────────
-function esc(s){
-  if(!s)return'';
-  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
-}
+function esc(s){if(!s)return'';return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
 
 // ── INIT ─────────────────────────────────────────────────────
-updateMgrUI();
+updateAdminUI();
 renderSetup();
-if(!FB_OK){renderLive();renderResults();}
 
-// ── SERVICE WORKER (PWA) ─────────────────────────────────────
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => {
-    navigator.serviceWorker.register('./sw.js').catch(() => {});
-  });
+// PWA Service Worker
+if('serviceWorker' in navigator){
+  window.addEventListener('load',()=>{navigator.serviceWorker.register('./sw.js').catch(()=>{});});
 }
 </script>
 </body>
