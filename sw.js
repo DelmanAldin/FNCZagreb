@@ -1,4 +1,4 @@
-const CACHE = 'fnc33-v1';
+const CACHE = 'fnc33-v3';
 const ASSETS = [
   './index.html',
   './manifest.json',
@@ -27,20 +27,24 @@ const ASSETS = [
 
 self.addEventListener('install', e => {
   e.waitUntil(
-    caches.open(CACHE).then(c => c.addAll(ASSETS)).then(() => self.skipWaiting())
+    caches.open(CACHE)
+      .then(c => c.addAll(ASSETS))
+      .then(() => self.skipWaiting())  // odmah preuzmi kontrolu
   );
 });
 
 self.addEventListener('activate', e => {
   e.waitUntil(
-    caches.keys().then(keys =>
-      Promise.all(keys.filter(k => k !== CACHE).map(k => caches.delete(k)))
-    ).then(() => self.clients.claim())
+    caches.keys()
+      .then(keys => Promise.all(
+        keys.filter(k => k !== CACHE).map(k => caches.delete(k))
+      ))
+      .then(() => self.clients.claim())  // preuzmi sve otvorene tabove
   );
 });
 
 self.addEventListener('fetch', e => {
-  // Firebase requests — uvijek na mrežu (real-time sync mora raditi)
+  // Firebase i Google fontove uvijek sa mreže
   if (e.request.url.includes('firebasedatabase.app') ||
       e.request.url.includes('googleapis.com') ||
       e.request.url.includes('gstatic.com')) {
